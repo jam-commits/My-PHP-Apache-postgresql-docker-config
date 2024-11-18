@@ -1,0 +1,20 @@
+{
+    "name": "jam-commits/my-project-name",
+    "description": "My project description",
+    "type": "project",
+    "require": {
+        "jam-commits/router": "^4.0",
+        "jam-commits/template-engine": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JamCommits\\MyProjectName\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jacques-Antoine",
+            "email": "jacques.antoine.dev@gmail.com"
+        }
+    ]
+}

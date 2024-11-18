@@ -1,0 +1,9 @@
+FROM httpd:2.4
+
+# Activer le module proxy_fcgi
+RUN apt-get update && apt-get install -y libapache2-mod-fcgid && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Configurer Apache pour utiliser PHP-FPM
+COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf
+
