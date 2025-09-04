@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile.apache
     ports:
-      - "8090:80" # Apache écoute sur le port 8080
+      - "8090:80"
     volumes:
       - .:/usr/local/apache2/htdocs/
     depends_on:
